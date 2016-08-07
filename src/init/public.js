@@ -1,4 +1,4 @@
-//this file is not required thought app but only by webpack, it go in /public/build.js
+//this file is not required thought app but only by webpack, it go in /public/app.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
