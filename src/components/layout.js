@@ -7,7 +7,7 @@ export default class LayoutComponent extends Component {
     render() {
         return (
             <div>
-                <Navbar color="red" active="active"/>
+                <Navbar color="red"/>
                 <h2>Welcome to my component layout</h2>
                 { this.props.children }
             </div>
