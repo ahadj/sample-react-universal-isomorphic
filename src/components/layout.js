@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import { IndexLinkContainer } from 'react-router-bootstrap';
+import Navbar from './navbar';
 
 export default class LayoutComponent extends Component {
     render() {
         return (
             <div>
+                <Navbar color="red" active="active"/>
                 <h2>Welcome to my component layout</h2>
-                <ul>
-                  <li><Link to='/'>Home</Link></li>
-                  <li><Link to='/about'>About</Link></li>
-                </ul>
                 { this.props.children }
             </div>
         );
