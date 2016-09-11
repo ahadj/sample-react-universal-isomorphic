@@ -10,7 +10,7 @@ app
     .set('port', config.server.port)
     .use(express.static('public'))
     // for each route we use react-router
-    .use('*', router)
+    .get('*', router)
     .listen(app.get('port'), config.server.host, err => {
         if (err) {
             throw err;
